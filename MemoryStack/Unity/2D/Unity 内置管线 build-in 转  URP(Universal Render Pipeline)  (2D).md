@@ -17,3 +17,5 @@ registry
 ![[Pasted image 20241204164329.png]]
 
 6,然后勾选所有材质,直接Converter 成功.
+
+可能会出现花屏bug[[内置管线转URP后场景花屏bug]]
