@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unity/UGUI/Unity  可滑动关卡.md",
+                "file": "Unity/打包/Unity   mac  打包 android apk 报错合集.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unity  可滑动关卡"
+              "title": "Unity   mac  打包 android apk 报错合集"
             }
           },
           {
@@ -57,7 +57,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -74,7 +74,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "搜索"
+              "title": "Search"
             }
           },
           {
@@ -87,8 +87,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -169,20 +168,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "eb844aee5121542a",
+  "active": "cce4be46862929fd",
   "lastOpenFiles": [
+    "Unity/UGUI/Unity  可滑动关卡.md",
+    "Unity/打包/Unity   mac  打包 android apk 报错合集.md",
+    "Unity/打包",
     "Unity/UGUI/Image/Pasted image 20241211191128.png",
     "Unity/UGUI/Image",
     "Unity/UGUI/DoTween 常用代码.md",
-    "Unity/UGUI/Unity  可滑动关卡.md",
     "Unity/杂项/Unity 调用IOS ATT授权弹窗（AppTrackingTransparency）.md",
     "Unity/广告/Untiy 接入CSJ广告.md",
     "Unity/广告/穿山甲 错误代码  40029.md",
@@ -216,10 +217,8 @@
     "Unity/2D/Image/Pasted image 20241204164329.png",
     "Unity/2D/Image/Pasted image 20241204164202.png",
     "Unity/2D/Image/Pasted image 20241204163951.png",
-    "Unity/2D/Image/Pasted image 20241204163745.png",
     "Unity/2D/Image",
     "Unity/API/使用ScriptableObject配置数据.md",
-    "Unity/API/Image",
     "2024-11-21.md",
     "未命名.canvas",
     "Unity/Event/事件管理器.md",
