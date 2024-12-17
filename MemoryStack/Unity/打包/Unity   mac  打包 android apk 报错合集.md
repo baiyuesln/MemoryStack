@@ -1,7 +1,7 @@
 #android打包
 
 # 报错1：UnityPlayerActivity找不到了？（大概意思）
-解决： 创建一个UnityPlayerActivity.java文件，放到指定位置即可
+解决： 创建一个UnityPlayerActivity.java文件，放到指定位置即可1
 
 UnityPlayerActivity.java示例：
 ```cs
