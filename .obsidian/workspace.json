@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MemoryStack/Unity/3D/物体移动碰撞穿模问题.md",
+                "file": "MemoryStack/Code/Event/事件管理器.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "物体移动碰撞穿模问题"
+              "title": "事件管理器"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "花",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,6 +164,25 @@
   },
   "active": "20fe789f94ea9704",
   "lastOpenFiles": [
+    "MemoryStack/Code/协程/注意事项.md",
+    "MemoryStack/Code/Event/事件管理器.md",
+    "MemoryStack/Code/协程",
+    "MemoryStack/Code",
+    "MemoryStack/Unity/打包/Unity   mac  打包 android apk 报错合集.md",
+    "MemoryStack/Unity/Bug/渲染类/内置管线转URP后场景花屏bug.md",
+    "MemoryStack/Unity/2D/2D阴影.md",
+    "MemoryStack/Unity/2D/不同分辨率正交相机模式下的spriteRanderer显示适配.md",
+    "MemoryStack/Unity/2D/Unity 内置管线 build-in 转  URP(Universal Render Pipeline)  (2D).md",
+    "MemoryStack/Code/框架/QFramework/简介.md",
+    "MemoryStack/Unity/广告/穿山甲 错误代码  40029.md",
+    "MemoryStack/Tool/Git.md",
+    "MemoryStack/Tool/VPN.md",
+    "MemoryStack/Resource/Unity素材/Untiy 2D素材.md",
+    "MemoryStack/Resource/Unity素材",
+    "MemoryStack/Resource",
+    "MemoryStack/Unity/UGUI/解决代码修改inputField.contentType不更新问题.md",
+    "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
+    "MemoryStack/Unity/UGUI/Unity  可滑动关卡.md",
     "MemoryStack/Unity/3D/物体移动碰撞穿模问题.md",
     "MemoryStack/Unity/3D"
   ]
