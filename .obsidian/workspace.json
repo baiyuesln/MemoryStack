@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MemoryStack/Code/Event/事件管理器.md",
+                "file": "MemoryStack/Unity/动画/使用有限状态机(FSM)实现animator动画控制.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "事件管理器"
+              "title": "使用有限状态机(FSM)实现animator动画控制"
             }
           }
         ]
@@ -164,8 +164,14 @@
   },
   "active": "20fe789f94ea9704",
   "lastOpenFiles": [
-    "MemoryStack/Code/协程/注意事项.md",
+    "MemoryStack/Unity/UGUI/预制体内sprite的统一替换.md",
+    "MemoryStack/Unity/动画/使用有限状态机(FSM)实现animator动画控制.md",
+    "MemoryStack/Unity/动画",
+    "MemoryStack/Unity/UGUI/Unity  可滑动关卡.md",
+    "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
+    "MemoryStack/Unity/UGUI/解决代码修改inputField.contentType不更新问题.md",
     "MemoryStack/Code/Event/事件管理器.md",
+    "MemoryStack/Code/协程/注意事项.md",
     "MemoryStack/Code/协程",
     "MemoryStack/Code",
     "MemoryStack/Unity/打包/Unity   mac  打包 android apk 报错合集.md",
@@ -180,9 +186,6 @@
     "MemoryStack/Resource/Unity素材/Untiy 2D素材.md",
     "MemoryStack/Resource/Unity素材",
     "MemoryStack/Resource",
-    "MemoryStack/Unity/UGUI/解决代码修改inputField.contentType不更新问题.md",
-    "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
-    "MemoryStack/Unity/UGUI/Unity  可滑动关卡.md",
     "MemoryStack/Unity/3D/物体移动碰撞穿模问题.md",
     "MemoryStack/Unity/3D"
   ]
