@@ -1,4 +1,4 @@
-#替换 #sprite
+#替换 #sprite #Editor
 
 功能:预制体内sprite的统一替换,可以附加指定格式的修改
 

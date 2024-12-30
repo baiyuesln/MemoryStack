@@ -333,3 +333,109 @@ return super.dispatchKeyEvent(event);
 
 解决：
 	把路径显示无效的user.keystore删了，重新打包即可
+
+# 报错3>
+Win32Exception: ApplicationName='/Applications/Unity/Hub/Editor/2021.3.16f1c1/PlaybackEngines/AndroidPlayer/SDK/tools/bin/sdkmanager', CommandLine='--list', CurrentDirectory='/Applications/BuruXIuxian/chuanQi', Native error= Access denied
+
+解决:
+
+	使用sudo修改权限
+sudo chmod -R 755 "/Applications/Unity/Hub/Editor/2021.3.16f1c1/PlaybackEngines/AndroidPlayer/SDK"
+
+	修改所有者
+sudo chown -R $USER "/Applications/Unity/Hub/Editor/2021.3.16f1c1/PlaybackEngines/AndroidPlayer/SDK"
+
+# 报错4:
+Internal build system error. BuildProgram exited with code 2.
+System.IO.FileNotFoundException: ==Could not load file or assembly 'Unity.IL2CPP.Bee.BuildLogic.Android,== Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+
+File name: 'Unity.IL2CPP.Bee.BuildLogic.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'
+
+解决:
+1
+	仔细查看报错信息发现,在这个报错上面还有一个找不到Temp/xx/xx的黄色报错信息,与热更有关,所以点击发现
+	HybirdCLR  生成 all  也是报同样的错
+	 ==重新安装HybirdCLR 从新生成==
+2
+	下载 mac build support(IL2CPP)  下载  ,然后下载器报错:“==安装器遇到了一个错误，导致安装失败。请联系软件制造商以获得帮助==”
+	 查看报错log   cd /var/log/installer.log  cat installer.log    
+	 发现没有找到路径下的Untiy.app    移动到它这里指定的路径,下载成功
+3
+	api compatibility level  -- > .net Standard2.1
+
+# 报错5:
+==Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8==  
+  
+FAILURE: Build failed with an exception.  
+  
+* What went wrong:  
+Could not determine the dependencies of task ':launcher:processReleaseResources'.  
+> Could not resolve all task dependencies for configuration ':launcher:releaseRuntimeClasspath'.  
+> Could not resolve com.pangle.cn:mediation-admob-adapter:17.2.0.49.  
+Required by:  
+project :launcher > project :unityLibrary  
+> Could not resolve com.pangle.cn:mediation-admob-adapter:17.2.0.49.  
+> Could not get resource 'https://maven.google.com/com/pangle/cn/mediation-admob-adapter/17.2.0.49/mediation-admob-adapter-17.2.0.49.pom'.  
+> Could not GET 'https://maven.google.com/com/pangle/cn/mediation-admob-adapter/17.2.0.49/mediation-admob-adapter-17.2.0.49.pom'.  
+> Connect to maven.google.com:443 [maven.google.com/142.250.204.46] failed: connect timed out  
+> Could not resolve com.pangle.cn:mediation-baidu-adapter:9.34.1.  
+Required by:  
+project :launcher > project :unityLibrary  
+> Could not resolve com.pangle.cn:mediation-baidu-adapter:9.34.1.  
+> Could not get resource 'https://maven.google.com/com/pangle/cn/mediation-baidu-adapter/9.34.1/mediation-baidu-adapter-9.34.1.pom'.  
+> Could not GET 'https://maven.google.com/com/pangle/cn/mediation-baidu-adapter/9.34.1/mediation-baidu-adapter-9.34.1.pom'.  
+> Connect to maven.google.com:443 [maven.google.com/142.250.204.46] failed: connect timed out  
+> Could not resolve com.pangle.cn:mediation-gdt-adapter:4.570.1440.0.  
+Required by:  
+project :launcher > project :unityLibrary  
+> Could not resolve com.pangle.cn:mediation-gdt-adapter:4.570.1440.0.  
+> Could not get resource 'https://maven.google.com/com/pangle/cn/mediation-gdt-adapter/4.570.1440.0/mediation-gdt-adapter-4.570.1440.0.pom'.  
+> Could not GET 'https://maven.google.com/com/pangle/cn/mediation-gdt-adapter/4.570.1440.0/mediation-gdt-adapter-4.570.1440.0.pom'.  
+> Connect to maven.google.com:443 [maven.google.com/142.250.204.46] failed: connect timed out  
+> Could not resolve com.pangle.cn:mediation-klevin-adapter:2.11.0.3.11.  
+Required by:  
+project :launcher > project :unityLibrary  
+> Could not resolve com.pangle.cn:mediation-klevin-adapter:2.11.0.3.11.  
+> Could not get resource 'https://maven.google.com/com/pangle/cn/mediation-klevin-adapter/2.11.0.3.11/mediation-klevin-adapter-2.11.0.3.11.pom'.  
+> Could not GET 'https://maven.google.com/com/pangle/cn/mediation-klevin-adapter/2.11.0.3.11/mediation-klevin-adapter-2.11.0.3.11.pom'.  
+> Connect to maven.google.com:443 [maven.google.com/142.250.204.46] failed: connect timed out  
+> Could not resolve com.pangle.cn:mediation-ks-adapter:3.3.63.0.  
+Required by:  
+project :launcher > project :unityLibrary  
+> Could not resolve com.pangle.cn:mediation-ks-adapter:3.3.63.0.  
+> Could not get resource 'https://maven.google.com/com/pangle/cn/mediation-ks-adapter/3.3.63.0/mediation-ks-adapter-3.3.63.0.pom'.  
+> Could not GET 'https://maven.google.com/com/pangle/cn/mediation-ks-adapter/3.3.63.0/mediation-ks-adapter-3.3.63.0.pom'.  
+> Connect to maven.google.com:443 [maven.google.com/142.250.204.46] failed: connect timed out  
+> Could not resolve com.pangle.cn:mediation-mintegral-adapter:16.5.47.3.  
+Required by:  
+project :launcher > project :unityLibrary  
+> Could not resolve com.pangle.cn:mediation-mintegral-adapter:16.5.47.3.  
+> Could not get resource 'https://maven.google.com/com/pangle/cn/mediation-mintegral-adapter/16.5.47.3/mediation-mintegral-adapter-16.5.47.3.pom'.  
+> Could not GET 'https://maven.google.com/com/pangle/cn/mediation-mintegral-adapter/16.5.47.3/mediation-mintegral-adapter-16.5.47.3.pom'.  
+> Connect to maven.google.com:443 [maven.google.com/142.250.204.46] failed: connect timed out  
+> Could not resolve com.pangle.cn:mediation-sigmob-adapter:4.15.1.2.  
+Required by:  
+project :launcher > project :unityLibrary  
+> Could not resolve com.pangle.cn:mediation-sigmob-adapter:4.15.1.2.  
+> Could not get resource 'https://maven.google.com/com/pangle/cn/mediation-sigmob-adapter/4.15.1.2/mediation-sigmob-adapter-4.15.1.2.pom'.  
+> Could not GET 'https://maven.google.com/com/pangle/cn/mediation-sigmob-adapter/4.15.1.2/mediation-sigmob-adapter-4.15.1.2.pom'.  
+> Connect to maven.google.com:443 [maven.google.com/142.250.204.46] failed: connect timed out  
+> Could not resolve com.pangle.cn:mediation-unity-adapter:4.3.0.17.  
+Required by:  
+project :launcher > project :unityLibrary  
+> Could not resolve com.pangle.cn:mediation-unity-adapter:4.3.0.17.  
+> Could not get resource 'https://maven.google.com/com/pangle/cn/mediation-unity-adapter/4.3.0.17/mediation-unity-adapter-4.3.0.17.pom'.  
+> Could not GET 'https://maven.google.com/com/pangle/cn/mediation-unity-adapter/4.3.0.17/mediation-unity-adapter-4.3.0.17.pom'.  
+> Connect to maven.google.com:443 [maven.google.com/142.250.204.46] failed: connect timed out  
+  
+* Try:  
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.  
+  
+* Get more help at https://help.gradle.org  
+  
+BUILD FAILED in 2m 7s  
+  
+UnityEngine.GUIUtility:ProcessEvent (int,intptr,bool&) (at /Users/bokken/buildslave/unity/build/Modules/IMGUI/GUIUtility.cs:189)
+
+解决:
+	无法连接到maven.google.com的问题,连个外网ok了
