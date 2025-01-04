@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MemoryStack/Unity/Editor/对项目中未引用的资源进行一键删除.md",
+                "file": "MemoryStack/Unity/2D/制作无限滑动的视差背景.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "对项目中未引用的资源进行一键删除"
+              "title": "制作无限滑动的视差背景"
             }
           }
         ]
@@ -164,12 +164,20 @@
   },
   "active": "20fe789f94ea9704",
   "lastOpenFiles": [
+    "MemoryStack/Unity/2D/Image/Pasted image 20250104205935.png",
+    "MemoryStack/Tool/Git.md",
+    "MemoryStack/Unity/2D/制作无限滑动的视差背景.md",
+    "MemoryStack/Tool/VPN.md",
+    "MemoryStack/Unity/打包/Unity   mac  打包 android apk 报错合集.md",
     "MemoryStack/Unity/Editor/对项目进行全面的混淆以通过ios审核和防止逆向.md",
     "MemoryStack/Unity/Editor/对项目中未引用的资源进行一键删除.md",
+    "MemoryStack/Unity/Editor/预制体内sprite的统一替换.md",
+    "MemoryStack/Unity/Editor/Untiy代码混淆  对指定文件夹下的.cs代码进行类名,函数名,变量名的一键混淆(保留Unity Editor引用).md",
+    "MemoryStack/Unity/Editor/Image/Pasted image 20250103172911.png",
+    "MemoryStack/Unity/Editor/Image",
+    "Pasted image 20250103172802.png",
     "MemoryStack/Unity/Editor/编辑器模式下对Text的一键修正.md",
     "MemoryStack/Unity/杂项/复刻旋转三角板.md",
-    "MemoryStack/Unity/Editor/预制体内sprite的统一替换.md",
-    "MemoryStack/Unity/打包/Unity   mac  打包 android apk 报错合集.md",
     "MemoryStack/Unity/Editor",
     "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
     "MemoryStack/Unity/UGUI/解决代码修改inputField.contentType不更新问题.md",
@@ -190,11 +198,6 @@
     "MemoryStack/Code/协程/注意事项.md",
     "MemoryStack/Code/协程",
     "MemoryStack/Code",
-    "MemoryStack/Unity/Bug/渲染类/内置管线转URP后场景花屏bug.md",
-    "MemoryStack/Code/框架/QFramework/简介.md",
-    "MemoryStack/Unity/广告/穿山甲 错误代码  40029.md",
-    "MemoryStack/Tool/Git.md",
-    "MemoryStack/Tool/VPN.md",
     "MemoryStack/Resource/Unity素材",
     "MemoryStack/Resource",
     "MemoryStack/Unity/3D"
