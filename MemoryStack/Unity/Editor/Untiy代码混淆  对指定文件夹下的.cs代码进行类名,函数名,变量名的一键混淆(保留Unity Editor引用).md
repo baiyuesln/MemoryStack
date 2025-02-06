@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
+using System.Text;
 
 /// <summary>
 /// 数据混淆工具 
@@ -74,6 +75,23 @@ public class CodeCustomObfuscator : EditorWindow
         "OnClick","onclick","OnClick","onclick","OnClick","onclick","OnClick","onclick",
         "OnClick","onclick","OnClick","onclick","OnClick","onclick","OnClick","onclick","RemoteServices","assets",
         "url","downloader","ResManager","image","Image","texture","Texture","sprite","Sprite",
+        "return","index","request","value","key","id","name","type","path","url","data","package","handle","operation","PlayMode","Progress","progress",
+        "result","button","Button","gameObject","GameObject","first","count","child","timer","token","userInfo",
+        "Enter","enter","Exit","Close","speed","Speed","success","Success","CreateItem","childCount","Register",
+        "version","linkInfo","SetText","jiangLi","JiangLi","qiangHuaLevel","ZhuangBei","QiangHua","YaoQianShu","JiQingPaoDian","vipValue",
+        "GetAwaiter","ScrollRect","default","content","WaitForSeconds","rectTransform","AddListener","WaitForEndOfFrame","Refresh",
+        "textColor","ProcessPurchase","SetValue","maxValue","WebRequest","minValue","PopupMessage","RegionalInfo",
+        "WaterImage","WaterIndex","RegionalInfo","noIsClickButton","WaterIndex",
+        "ShuLing","MessageUp","MessageDown","MenuPanel","PopupMessage","ChatRoomLIs_Yoo_amber_tManager",
+        "BackButton","userGetCustomInfoCommandList","ChuangTianGuan","qiangHua","YiJieFuBen","fuBenId","GuaiWuData","GuaiWuDataEnc"
+        ,"netTime","JiangLiEnc","GuaiWuShuXingEnc","GuaiWuShuXing","ZhuangBeiJiangliDataEnc","ZhuangBeiJiangliData","guaiWuType",
+        "GuaiWuData","NowGuaiWuFuBenEnc","NowGuaiWuFuBen","GuaiWuFuBenEnc","GuaiWuFuBen","DiTuEnc","BaseBeiBaoHorItem"
+        ,"UserEcSignSecretDto","UserEcSect","UserEcRecordAddNumDto","UserEcInfo","UserEcCultivation",
+        "UserEcCount","UserEcCardBag","UserEcAssets","HomePageEcInfoDto","zhanDouLi","chatRoomLIstManager","ChatRoomLIstManager",
+        "startShuXing","endShuXing","baiZhuang","BaoShiXiangQianPanelData","LocalEquipmentInfoEnc","usersCustomInfoDtoList","Broadcast",
+        "goodInfo","LocalEquipmentInfo","zhuangBei","builder","NanosecondsPerTick","shangCheng","goodsId",
+        "goodsType","scrollRect",
+        "gameManager","shengHuaPanel","createPosToDengjiPos","createPosToZhuangBeiPos",
         // 可以根据需要添加更多关键字
     };
 
@@ -108,7 +126,130 @@ public class CodeCustomObfuscator : EditorWindow
         "_Yoo_Main_",
         "_Yoo_Sub_",
         "_Yoo_Child_",
+        "_Yoo_Manager_",
+        "_Yoo_Handler_",
+        "_Yoo_Controller_",
+        //不能重复,格式是_Yoo_xxx_
+        "_Yoo_hello_",
+        "_Yoo_world_",
+        "_Yoo_test_",
+        "_Yoo_demo_",
+        "_Yoo_example_",
+        "_Yoo_sample_",
+        "_Yoo_alpha_",
+        "_Yoo_beta_",
+        "_Yoo_gamma_",
+        "_Yoo_delta_",
+        "_Yoo_epsilon_",
+        "_Yoo_zeta_",
+        "_Yoo_theta_",
+        "_Yoo_iota_",
+        "_Yoo_kappa_",
+        "_Yoo_lambda_",
+        "_Yoo_sigma_",
+        "_Yoo_omega_",
+        "_Yoo_phoenix_",
+        "_Yoo_dragon_",
+        "_Yoo_tiger_",
+        "_Yoo_lion_",
+        "_Yoo_eagle_",
+        "_Yoo_hawk_",
+        "_Yoo_wolf_",
+        "_Yoo_bear_",
+        "_Yoo_snake_",
+        "_Yoo_fox_",
+        "_Yoo_deer_",
+        "_Yoo_rabbit_",
+        "_Yoo_mouse_",
+        "_Yoo_cat_",
+        "_Yoo_dog_",
+        "_Yoo_bird_",
+        "_Yoo_fish_",
+        "_Yoo_whale_",
+        "_Yoo_shark_",
+        "_Yoo_dolphin_",
+        "_Yoo_turtle_",
+        "_Yoo_crab_",
+        "_Yoo_star_",
+        "_Yoo_moon_",
+        "_Yoo_sun_",
+        "_Yoo_sky_",
+        "_Yoo_cloud_",
+        "_Yoo_rain_",
+        "_Yoo_snow_",
+        "_Yoo_wind_",
+        "_Yoo_storm_",
+        "_Yoo_thunder_",
+        "_Yoo_lightning_",
+        "_Yoo_fire_",
+        "_Yoo_water_",
+        "_Yoo_earth_",
+        "_Yoo_metal_",
+        "_Yoo_wood_",
+        "_Yoo_gold_",
+        "_Yoo_silver_",
+        "_Yoo_bronze_",
+        "_Yoo_iron_",
+        "_Yoo_steel_",
+        "_Yoo_crystal_",
+        "_Yoo_diamond_",
+        "_Yoo_ruby_",
+        "_Yoo_emerald_",
+        "_Yoo_sapphire_",
+        "_Yoo_pearl_",
+        "_Yoo_jade_",
+        "_Yoo_amber_",
+        "_Yoo_opal_",
+        "_Yoo_topaz_",
+        "_Yoo_quartz_",
+        "_Yoo_onyx_",
+        "_Yoo_agate_",
+        "_Yoo_coral_",
+        "_Yoo_jasper_",
+        "_Yoo_garnet_",
+        "_Yoo_zircon_",
+        "_Yoo_beryl_",
+        "_Yoo_aqua_",
+        "_Yoo_lapis_",
+        "_Yoo_malachite_",
+        "_Yoo_obsidian_",
+        "_Yoo_peridot_",
+        "_Yoo_tanzanite_",
+        "_Yoo_turquoise_",
+        "_Yoo_alexandrite_",
+        "_Yoo_amethyst_",
+        "_Yoo_citrine_",
+        "_Yoo_moonstone_",
+        "_Yoo_sunstone_",
+        "_Yoo_bloodstone_",
+        "_Yoo_chrysolite_",
+        "_Yoo_fluorite_",
+        "_Yoo_hematite_",
+        "_Yoo_howlite_",
+        "_Yoo_kunzite_",
+        "_Yoo_larimar_",
+        "_Yoo_nephrite_",
+        "_Yoo_rhodonite_",
+        "_Yoo_serpentine_",
+        "_Yoo_sodalite_",
+        "_Yoo_spinel_",
+        "_Yoo_sugilite_",
+        "_Yoo_tektite_",
+        "_Yoo_titanite_",
+        "_Yoo_unakite_",
+        "_Yoo_variscite_",
+        "_Yoo_vesuvianite_",
+        "_Yoo_wavelite_",
+        "_Yoo_xenotime_",
+        "_Yoo_yttrium_",
+        "_Yoo_zoisite_",
+
+
+
     };
+
+    // 添加一个新的集合来存储需要保护的文件名
+    private HashSet<string> protectedNames = new HashSet<string>();
 
     // 初始化
     [MenuItem("Tools/CodeObfuscator")]
@@ -149,6 +290,13 @@ public class CodeCustomObfuscator : EditorWindow
             // "t:Script" 是 Unity 的类型过滤器，只会查找脚本文件
             // new[] { folderPath } 指定了搜索范围
             string[] scriptGuids = AssetDatabase.FindAssets("t:Script", new[] { folderPath });
+
+            // 添加调试输出
+            foreach (var guid in scriptGuids)
+            {
+                string scriptPath = AssetDatabase.GUIDToAssetPath(guid);
+                Debug.Log($"找到脚本: {scriptPath}");
+            }
 
             // 将找到的 GUID 转换为 MonoScript 对象数组
             scripts = scriptGuids
@@ -201,10 +349,10 @@ public class CodeCustomObfuscator : EditorWindow
         // 获取脚本路径
         string scriptPath = AssetDatabase.GetAssetPath(script);
         // 读取脚本内容
-        string content = File.ReadAllText(scriptPath);
+        string conten_Yoo_Handler_t = File.ReadAllText(scriptPath);
 
         // 收集需要修改的名称
-        CollectNames(content);
+        CollectNames(conten_Yoo_Handler_t);
 
         // 在项目中查找所有C#文件
         string[] allScripts = Directory.GetFiles(Application.dataPath, "*.cs", SearchOption.AllDirectories);
@@ -232,9 +380,9 @@ public class CodeCustomObfuscator : EditorWindow
                 foreach (string guid in guids)
                 {
                     // 获取脚本资源路径
-                    string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+                    string assetPat_Yoo_Net_h = AssetDatabase.GUIDToAssetPath(guid);
                     // 如果文件名等于旧类名
-                    if (Path.GetFileNameWithoutExtension(assetPath) == oldName)
+                    if (Path.GetFileNameWithoutExtension(assetPat_Yoo_Net_h) == oldName)
                     {
                         using (StreamWriter writer = new StreamWriter(mappingPath, true)) // 改为 true 实现追加写入
                         {
@@ -243,7 +391,7 @@ public class CodeCustomObfuscator : EditorWindow
                         }
                         // 使用AssetDatabase.RenameAsset重命名文件
                         // 这会保持meta文件和引用关系
-                        AssetDatabase.RenameAsset(assetPath, newName);
+                        AssetDatabase.RenameAsset(assetPat_Yoo_Net_h, newName);
                         
                         // 更新预制体中的引用
                         // UpdatePrefabReferences(oldName, newName,script);
@@ -276,7 +424,7 @@ public class CodeCustomObfuscator : EditorWindow
             string prefabPath = AssetDatabase.GUIDToAssetPath(guid);
             // 加载预制体
             GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(prefabPath);
-            bool modified = false;
+            bool modi_Yoo_Base_fied = false;
 
             // 更新脚本引用
             var components = prefab.GetComponentsInChildren<Component>(true);
@@ -287,13 +435,13 @@ public class CodeCustomObfuscator : EditorWindow
                 if (component != null && component.GetType().Name == oldName)
                 {
                     // 标记修改
-                    modified = true;
+                    modi_Yoo_Base_fied = true;
                     break;
                 }
             }
 
             // 如果修改了
-            if (modified)
+            if (modi_Yoo_Base_fied)
             {
                 // 标记修改
                 EditorUtility.SetDirty(prefab);
@@ -374,20 +522,27 @@ public class CodeCustomObfuscator : EditorWindow
     private void CollectNames(string content)
     {
         nameMapping.Clear();
+        protectedNames.Clear();
+
+        // 首先收集所有字符串中的.txt文件名
+        var txtFileRegex = new Regex("\"([^\"]*\\.txt)\"");
+        foreach (Match match in txtFileRegex.Matches(content))
+        {
+            string fileName = match.Groups[1].Value;
+            // 移除.txt后缀，保护文件名主体
+            string nameWithoutExt = Path.GetFileNameWithoutExtension(fileName);
+            protectedNames.Add(nameWithoutExt);
+        }
 
         if (modifyClassName)
         {
-            // 匹配类名 
-            var classRegex = new Regex(@"class\s+([A-Za-z_][A-Za-z0-9_]*)\s*[:{]");
-            // 循环匹配
+            // 修改正则表达式以更准确地匹配继承自 MonoBehaviour 的类
+            var classRegex = new Regex(@"class\s+([A-Za-z_][A-Za-z0-9_]*)\s*:\s*(?:[public|private|protected|internal]\s+)?BasePanel\s*(?:,\s*[A-Za-z_][A-Za-z0-9_<>,\s]*)*\s*{");
             foreach (Match match in classRegex.Matches(content))
             {
-                // 获取类名
                 string className = match.Groups[1].Value;
-                // 如果类名不跳过
-                if (!ShouldSkipName(className))
+                if (!ShouldSkipName(className) && !protectedNames.Contains(className))
                 {
-                    // 生成新类名
                     nameMapping[className] = GenerateNameWithKeyword(className);
                 }
             }
@@ -395,17 +550,12 @@ public class CodeCustomObfuscator : EditorWindow
 
         if (modifyMethodNames)
         {
-            // 匹配方法名
             var methodRegex = new Regex(@"(?:public|private|protected|internal|\s)\s+(?:static\s+)?[A-Za-z_][A-Za-z0-9_]*\s+([A-Za-z_][A-Za-z0-9_]*)\s*\(");
-            // 循环匹配
             foreach (Match match in methodRegex.Matches(content))
             {
-                // 获取方法名
                 string methodName = match.Groups[1].Value;
-                // 如果方法名不跳过
-                if (!ShouldSkipName(methodName))
+                if (!ShouldSkipName(methodName) && !protectedNames.Contains(methodName))
                 {
-                    // 生成新方法名
                     nameMapping[methodName] = GenerateNameWithKeyword(methodName);
                 }
             }
@@ -413,19 +563,32 @@ public class CodeCustomObfuscator : EditorWindow
 
         if (modifyFieldNames)
         {
-            // 匹配变量名，但排除序列化字段
-            var fieldRegex = new Regex(@"(?:public|private|protected|internal|\s)\s+(?:static\s+)?[A-Za-z_][A-Za-z0-9_]*\s+([A-Za-z_][A-Za-z0-9_]*)\s*[;=]");
-            // 循环匹配
+            // 使用(?s)标志来让.匹配换行符，并使用更宽松的空白字符匹配
+            var fieldRegex = new Regex(@"(?s)(?://[^\n]*\n)*\s*(\[SerializeField\])\s*(?:private|protected)\s+(?:static\s+)?[A-Za-z_][A-Za-z0-9_<>\.]*\s+([A-Za-z_][A-Za-z0-9_]*)\s*[;=]", RegexOptions.Multiline);
+            
+            // 首先找出所有序列化字段
+            var serializedFields = new HashSet<string>();
             foreach (Match match in fieldRegex.Matches(content))
             {
-                // 获取变量名
+                if (match.Groups[1].Success)
+                {
+                    serializedFields.Add(match.Groups[2].Value);
+                }
+            }
+
+            // 然后匹配所有字段
+            var allFieldsRegex = new Regex(@"(?:private|protected)\s+(?:static\s+)?[A-Za-z_][A-Za-z0-9_<>\.]*\s+([A-Za-z_][A-Za-z0-9_]*)\s*[;=]", RegexOptions.Multiline);
+            
+            foreach (Match match in allFieldsRegex.Matches(content))
+            {
                 string fieldName = match.Groups[1].Value;
                 
-                // 检查是否是序列化字段
-                bool isSerializedField = IsSerializedField(content, fieldName);
+                if (serializedFields.Contains(fieldName) || protectedNames.Contains(fieldName))
+                {
+                    continue;
+                }
                 
-                // 如果变量名不跳过且不是序列化字段
-                if (!ShouldSkipName(fieldName) && !isSerializedField)
+                if (!ShouldSkipName(fieldName))
                 {
                     nameMapping[fieldName] = GenerateNameWithKeyword(fieldName);
                 }
@@ -436,34 +599,68 @@ public class CodeCustomObfuscator : EditorWindow
     // 检查字段是否是序列化字段
     private bool IsSerializedField(string content, string fieldName)
     {
-        // 检查字段上方是否有 [SerializeField] 特性
-        var serializedFieldPattern = @"\[SerializeField\]\s*(?:public|private|protected|internal|\s)\s+(?:static\s+)?[A-Za-z_][A-Za-z0-9_]*\s+" + fieldName + @"\s*[;=]";
-        if (Regex.IsMatch(content, serializedFieldPattern))
-            return true;
-
-        // 检查是否是public字段（Unity默认序列化public字段）
-        var publicFieldPattern = @"public\s+(?:static\s+)?[A-Za-z_][A-Za-z0-9_]*\s+" + fieldName + @"\s*[;=]";
-        if (Regex.IsMatch(content, publicFieldPattern))
-            return true;
-
-        // 检查是否继承自MonoBehaviour
-        if (content.Contains("MonoBehaviour") && IsMonoBehaviourField(content, fieldName))
-            return true;
-
+        // 修改正则表达式以更准确地匹配字段声明
+        var fieldPattern = $@"(?:private|protected)\s+(?:static\s+)?[A-Za-z_][A-Za-z0-9_<>\.]*\s+{Regex.Escape(fieldName)}\s*[;=]";
+        
+        var matches = Regex.Matches(content, fieldPattern, RegexOptions.Multiline);
+        foreach (Match match in matches)
+        {
+            // 获取字段声明的位置
+            int fieldPosition = match.Index;
+            
+            // 向上查找最近的特性标记
+            int searchStartPosition = Mathf.Max(0, fieldPosition - 200); // 向上搜索200个字符
+            string precedingContent = content.Substring(searchStartPosition, fieldPosition - searchStartPosition);
+            
+            // 检查是否有序列化相关的特性
+            if (precedingContent.Contains("[SerializeField]") ||
+                precedingContent.Contains("[SerializedField]") ||
+                precedingContent.Contains("[Header") ||
+                precedingContent.Contains("[Tooltip"))
+            {
+                // 确保特性和字段声明之间没有其他字段声明
+                string[] lines = precedingContent.Split('\n');
+                bool hasOtherDeclarations = false;
+                
+                for (int i = lines.Length - 1; i >= 0; i--)
+                {
+                    string line = lines[i].Trim();
+                    if (line.Contains("[SerializeField]") || 
+                        line.Contains("[SerializedField]") ||
+                        line.Contains("[Header") ||
+                        line.Contains("[Tooltip"))
+                    {
+                        break;
+                    }
+                    
+                    if (Regex.IsMatch(line, @"^\s*(?:private|protected|public)\s+.*[;=]"))
+                    {
+                        hasOtherDeclarations = true;
+                        break;
+                    }
+                }
+                
+                if (!hasOtherDeclarations)
+                {
+                    return true;
+                }
+            }
+        }
+        
         return false;
     }
 
     // 检查字段是否属于MonoBehaviour子类
-    private bool IsMonoBehaviourField(string content, string fieldName)
+    private bool IsMonoBehaviourField(string conten_Yoo_Handler_t, string fieldName)
     {
         // 检查类是否继承自MonoBehaviour
         var classPattern = @"class\s+[A-Za-z_][A-Za-z0-9_]*\s*:\s*MonoBehaviour";
-        if (!Regex.IsMatch(content, classPattern))
+        if (!Regex.IsMatch(conten_Yoo_Handler_t, classPattern))
             return false;
 
         // 检查字段是否在这个类中
         var fieldInClassPattern = @"class\s+[A-Za-z_][A-Za-z0-9_]*\s*:\s*MonoBehaviour[^}]*" + fieldName;
-        return Regex.IsMatch(content, fieldInClassPattern, RegexOptions.Singleline);
+        return Regex.IsMatch(conten_Yoo_Handler_t, fieldInClassPattern, RegexOptions.Singleline);
     }
 
     // 处理文件
@@ -473,36 +670,65 @@ public class CodeCustomObfuscator : EditorWindow
         string content = File.ReadAllText(filePath);
         bool modified = false;
 
-        // 循环nameMapping
-        foreach (var pair in nameMapping)
+        // 使用 StringBuilder 提升性能
+        StringBuilder sb = new StringBuilder(content);
+        
+        // 创建一个综合的正则表达式模式
+        string combinedPattern = string.Join("|", nameMapping.Keys.Select(name => 
+            $@"\b{Regex.Escape(name)}\b(?=[^A-Za-z0-9_]|$|\.|\s*[:<\s{{(),}}\[\]]|\s*\.|=|;|\+|-|\*|/)"
+        ));
+
+        // 一次性找到所有需要替换的匹配项
+        var matches = Regex.Matches(content, combinedPattern)
+                          .Cast<Match>()
+                          .OrderByDescending(m => m.Index) // 从后向前替换,避免位置偏移
+                          .ToList();
+
+        // 批量处理所有匹配项
+        foreach (var match in matches)
         {
-            // 如果文件内容包含key
-            if (content.Contains(pair.Key))
+            string oldName = match.Value;
+            if (nameMapping.TryGetValue(oldName, out string newName))
             {
-                // 替换key为value
-                content = ReplaceIdentifier(content, pair.Key, pair.Value);
+                sb.Remove(match.Index, match.Length);
+                sb.Insert(match.Index, newName);
                 modified = true;
             }
         }
 
-        // 如果文件内容被修改
+        // 特殊处理 using static 语句
+        string usingPattern = @"(using\s+static\s+)([A-Za-z0-9_\.]+)\s*;";
+        content = sb.ToString();
+        content = Regex.Replace(content, usingPattern, match =>
+        {
+            string prefix = match.Groups[1].Value;
+            string typeName = match.Groups[2].Value;
+            
+            if (nameMapping.TryGetValue(typeName, out string newName))
+            {
+                modified = true;
+                return $"{prefix}{newName};";
+            }
+            return match.Value;
+        });
+
+        // 如果文件内容被修改则写入
         if (modified)
         {
-            // 写入文件
             File.WriteAllText(filePath, content);
             Debug.Log($"已修改文件: {filePath}");
         }
     }
 
-    private string ReplaceIdentifier(string content, string oldName, string newName)
+    private string ReplaceIdentifier(string conten_Yoo_Handler_t, string oldName, string newName)
     {
-        return Regex.Replace(content, $@"\b{oldName}\b", newName);
+        return Regex.Replace(conten_Yoo_Handler_t, $@"\b{oldName}\b", newName);
     }
 
     private bool ShouldSkipName(string name)
     {
         // 跳过4个字符及以下的名称
-        if (name.Length <= 4)
+        if (name.Length <= 6)
             return true;
 
         // 检查是否是C#关键字
@@ -510,11 +736,11 @@ public class CodeCustomObfuscator : EditorWindow
             return true;
 
         // 检查是否包含下划线
-        if (name.Contains("_"))
+        if (name.Contains("_")|| name.Contains(".") ||name.Contains(" ")||name.Contains("@"))
             return true;
 
         // 检查特殊后缀
-        if (name.EndsWith("Sync") || name.EndsWith("Async"))
+        if (name.EndsWith("Sync") || name.EndsWith("Async")|| name.Contains(".txt"))
             return true;
 
         // 检查特殊前缀

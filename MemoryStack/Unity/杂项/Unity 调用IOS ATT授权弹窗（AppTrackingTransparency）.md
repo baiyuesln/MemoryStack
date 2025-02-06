@@ -116,7 +116,7 @@ public class ATTAuth : MonoBehaviour
 ```CSharp
 if (Application.platform == RuntimePlatform.IPhonePlayer)
 {
-    int curStatus = ATTAuth.GetAppTrackingAuthorizationStatus());
+    int curStatus = ATTAuth.GetAppTrackingAuthorizationStatus();
     if(curStatus == 0)
     {
         ATTAuth.RequestTrackingAuthorizationWithCompletionHandler((status) =>
