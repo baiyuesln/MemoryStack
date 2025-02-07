@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MemoryStack/Unity/Editor/对项目进行全面的混淆以通过ios审核和防止逆向.md",
+                "file": "MemoryStack/Code/算法/A*寻路算法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "对项目进行全面的混淆以通过ios审核和防止逆向"
+              "title": "A*寻路算法"
             }
           }
         ]
@@ -164,6 +164,11 @@
   },
   "active": "20fe789f94ea9704",
   "lastOpenFiles": [
+    "MemoryStack/Code/算法/Image/Pasted image 20250207102226.png",
+    "MemoryStack/Code/算法/Image",
+    "MemoryStack/Unity/Editor/对项目进行全面的混淆以通过ios审核和防止逆向.md",
+    "MemoryStack/Code/算法/A*寻路算法.md",
+    "MemoryStack/Code/算法",
     "MemoryStack/Unity/Editor/编辑器模式下对Text的一键修正.md",
     "MemoryStack/Unity/Editor/Untiy代码混淆  对指定文件夹下的.cs代码进行类名,函数名,变量名的一键混淆(保留Unity Editor引用).md",
     "MemoryStack/Unity/Editor/预制体内sprite的统一替换.md",
@@ -174,7 +179,6 @@
     "MemoryStack/Unity/杂项/Untiy引用旧项目加入到新的项目中.md",
     "MemoryStack/Unity/打包/Unity   mac  打包 android apk 报错合集.md",
     "MemoryStack/Unity/Editor/垃圾代码生成器.md",
-    "MemoryStack/Unity/Editor/对项目进行全面的混淆以通过ios审核和防止逆向.md",
     "MemoryStack/Unity/2D/制作无限滑动的视差背景.md",
     "MemoryStack/Unity/2D/Image/Pasted image 20250104205935.png",
     "MemoryStack/Tool/Git.md",
@@ -194,8 +198,6 @@
     "MemoryStack/Unity/2D/2D阴影.md",
     "MemoryStack/Unity/3D/物体移动碰撞穿模问题.md",
     "MemoryStack/Unity/API/TrailRenderer  拖尾组件.md",
-    "MemoryStack/Unity/API/使用ScriptableObject配置数据.md",
-    "MemoryStack/Unity/UGUI/Unity  可滑动关卡.md",
     "MemoryStack/Unity/动画",
     "MemoryStack/Code/协程",
     "MemoryStack/Code",
