@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MemoryStack/Unity/3D/物体移动碰撞穿模问题.md",
+                "file": "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "物体移动碰撞穿模问题 的反向链接列表"
+              "title": "用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇) 的反向链接列表"
             }
           },
           {
@@ -155,18 +155,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MemoryStack/Unity/3D/物体移动碰撞穿模问题.md"
+                "file": "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "物体移动碰撞穿模问题 的大纲"
+              "title": "用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇) 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,26 +183,32 @@
   },
   "active": "474272f20fe9d411",
   "lastOpenFiles": [
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250214111607.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250214110736.png",
-    "MemoryStack/Unity/优化/Image/Pasted image 20250211171731.png",
-    "MemoryStack/Unity/优化/Image/Pasted image 20250211171214.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216172815.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216164833.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216164745.png",
+    "MemoryStack/Resource/Unity素材/Untiy 2D素材.md",
+    "MemoryStack/Code/Event/事件管理器.md",
+    "MemoryStack/Code/Event/委托 delegate.md",
+    "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216150139.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216150114.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216140523.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216145959.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216150042.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216150051.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216140358.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216133317.png",
     "MemoryStack/Unity/优化/Image",
     "MemoryStack/Unity/打包/打包并发布微信小游戏.md",
     "MemoryStack/Unity/优化/WebGL包体大小优化.md",
     "MemoryStack/Unity/优化",
     "MemoryStack/Unity/未命名.md",
     "MemoryStack/Unity/打包/Unity   mac  打包 android apk 报错合集.md",
-    "MemoryStack/Unity/打包/Image/Pasted image 20250211160429.png",
     "MemoryStack/Unity/打包/Image",
-    "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250211135512.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250211113849.png",
     "MemoryStack/Unity/系统设计/Image",
     "MemoryStack/Unity/系统设计/游戏角色属性数值非线性转换设计.md",
     "MemoryStack/Unity/系统设计",
     "MemoryStack/Code/算法/A*寻路算法.md",
-    "MemoryStack/Code/算法/Image/Pasted image 20250207102226.png",
     "MemoryStack/Code/算法/Image",
     "MemoryStack/Unity/Editor/对项目进行全面的混淆以通过ios审核和防止逆向.md",
     "MemoryStack/Code/算法",
@@ -213,18 +222,12 @@
     "MemoryStack/Unity/杂项/Untiy引用旧项目加入到新的项目中.md",
     "MemoryStack/Unity/Editor/垃圾代码生成器.md",
     "MemoryStack/Unity/2D/制作无限滑动的视差背景.md",
-    "MemoryStack/Unity/2D/Image/Pasted image 20250104205935.png",
     "MemoryStack/Tool/Git.md",
     "MemoryStack/Tool/VPN.md",
-    "MemoryStack/Unity/Editor/Image/Pasted image 20250103172911.png",
     "MemoryStack/Unity/Editor/Image",
-    "Pasted image 20250103172802.png",
     "MemoryStack/Unity/杂项/复刻旋转三角板.md",
     "MemoryStack/Unity/Editor",
     "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
-    "MemoryStack/Unity/UGUI/解决代码修改inputField.contentType不更新问题.md",
-    "MemoryStack/2024-12-09.md",
-    "README.md",
     "MemoryStack/Unity/动画"
   ]
 }

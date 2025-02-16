@@ -204,3 +204,196 @@ ChaState还有一个“side-effect”就是大半个buff管理器，负责角色
 
 ## 时间轴（Timeline）
 
+基于时间轴对一个或多个事件进行预约调度.
+
+![[Pasted image 20250216133317.png]]
+
+### TimelineNode
+
+这是Timeline的每一个节点的信息，它主要包含3个内容：
+
+- timeElapsed：发生在timeline运行之后多久。
+- event：即一个事件脚本函数。
+- eventParam：是这个脚本需要传递的参数，这个脚本是：
+
+```csharp
+public delegate void TimelineEvent(TimelineObj timeline, params object[] args);
+```
+
+这里的参数TimelineObj即执行这个事件的Timeline，而args是动态的参数，即调用这个脚本时候传递给这个脚本的参数，也就是eventParam。
+
+### TimelineModel
+
+这是策划填表的Timeline数据，当然它的来源可以不仅仅是填表（包括使用编辑器之类的生成，其本质也是填表），基于TimelineModel创建游戏运行中的TimelineObj。他主要包含了：
+
+- **nodes**：这个timeline所有的节点事件。
+- **duration**：整个timeline的生命周期，timeline总需要一个结束释放掉的时间，他未必是最后一个节点所在的位置，或者最后一个节点的事情做完，比如最后一个节点是播放一个动画，可能动画开始播放0.3秒就可以结束掉timeline了，这完全取决于策划和美术的想法，因此结构上就得给这么一个float去定义。
+- **chargePoint**：这是顶视角射击游戏的特色——他就会有一些需要蓄力的技能，蓄力的技能无非就是在Timeline上有一个循环“播放”的区域——在某一帧A判断，如果需要“蓄力”，就跳转到某一帧B（通常来说比A靠前，不然“蓄力”就变成“快速释放”了，当然并不是不能这么用，只要游戏设计用得着）。
+
+### TimelineObj
+
+即游戏世界运行的实实在在存在的Timeline，一个Timeline是一个独立的元素，他并不隶属于谁。通常我们可能错误的理解为他隶属于一个角色，实际上你可以这样理解——他是一段剧本，这段剧本可能属于某个演员，但也可能不属于任何演员，只是道具组场景组要工作。TimelineObj除了有个Model证明他是什么，还需要一些元素：
+
+- caster：Timeline的焦点对象也就是创建timeline的负责人，比如技能产生的timeline，就是技能的施法者
+- timeScale：这是因为游戏中会有“狂暴”之类的设计，他的效果是“使角色动作加速”，这里的动作加速，不光是美术做的动画要加速，逻辑内容也要加速，所以得有个timeScale。这个timeScale*Time.fixedDeltaTime就是每个fixedUpdate中timeElapsed增量。
+- param：这是一个动态传递的参数，通常是timeline的“创建源”，比如是一个技能创建的，他就是一个SkillObj，记录用的，也作为参数传递给timeline的事件脚本。
+- timeElapsed：就是经过了多少时间了，这决定了每个node是否该运作了。
+
+## 技能（Skill）
+
+这里释放技能是先判断是否满足释放条件(是否学习,蓝量是否足够等),
+然后直接产生此技能对应的TimelineObj,使之在TimelineManager自行运作.最后扣除Cost,结束施放.
+![[Pasted image 20250216140358.png]]
+
+在这里，我们把一切“技能效果”，都抽象为了Timeline。
+
+比如在游戏中有一个火球魔法，我们释放技能，首先就是检查我们的资源是否足够释放，或者说是否学会了这个火球魔法，总之一系列检查是否能放；通过之后，就扣除对应的资源，并且创建了一个Timeline，这个Timeline做了几件事情：
+
+- 0秒时角色开始播放吟唱动作（低头念咒）
+- 1.5秒时角色开始播放施法动作（手一伸，指向目标）
+- 1.5秒时创建一个子弹（火球）飞向目标
+
+### 技能的数据结构
+
+![[Pasted image 20250216140523.png]]
+
+### SkillModel
+
+技能的模板，这是一个策划填表的数据，它主要包含了：
+
+- condition：在这个demo里，技能的释放条件仅仅只有角色的资源（ChaResource），角色资源也就是Hp、Ammo之类的数值，指的是角色现有的生命值、弹药值等等，检查如果数量足够就算condition为true了。而根据游戏设计，相对复杂一点的，他也不是很需要直接做成一个function，因为只要判断角色持有的buff外加资源就可以满足绝大多数游戏技能需要。但是buff机制本身是强调开放性的，所以这里应该随时都可以被改为一个function，让策划写脚本决定一个技能是否能被释放。
+- cost：通常都是ChaResource，因为使用技能以后会扣除这些资源，最常见的就是减少mana。我们通常看到的技能都是cost == condition 的，但实际上并不是，他们是2个属性，因为有些技能是这样的——当怒气大于20的时候可以释放，消耗掉所有的怒气，造成100+怒气值点伤害，这时候cost和condition就是不等的。
+- effect：也就是技能释放成功的时候创建的一个Timeline，这个Timeline的caster就是技能释放者，而param就是这个技能的skillObj。
+- buff：是当玩家角色学会这个技能的时候（由SkillModel创建了一个SkillObj的时候）会给玩家角色添加的永久buff
+### SkillObj
+
+- **model**：也就是SkillModel数据。在游戏中，如果我们经过历练之后，比如一个火球技能，现在能发出2个火球了，那我们需要做的就是把skill.model.timeline给“hack”了，而不需要设计“另外一个技能”。
+- **level**：技能的等级，如果有技能升级系统的话……
+- **其他**：这是根据游戏设计需要的，比如游戏需要技能还能装插件，不同的插件对技能效果有不同的影响，这时候我们至少得有这些插件槽的数据在这里。
+## Buff
+
+这里Buff作为一个角色的"属性数据",角色的ChaState中有一个List BuffObj就是这个角色所有的buff了。
+
+### Buff的数据结构
+![[Pasted image 20250216150114.png]]
+![[Pasted image 20250216150139.png]]
+
+
+
+### BuffModel
+
+- **tags**：是一个string数组，这相当于是对于buff的一个属性的描述。
+- **priority**：优先级，这通常是一个int，也是需要策划预设好的。
+- **tickTime**：buff的工作周期，单位：秒。
+- **maxStack**：最大堆叠层数。
+
+### BuffObj
+
+- **model**：BuffModel
+- **time**：也就是buffObj的时间，permanent代表了是否是一个永久的，如果是永久的，duration就不会变化，但是timeElapsed依然会增加，ticked也会随着触发OnTick的次数增加；duration是生命周期，当他小于等于0的时候BuffObj就将被删除了；timeElapsed是记录了这个BuffObj存在了多久了，因为duration这个数据也是可以在运行时被改动的，比如我有个“加热”技能，他的效果是“灼热”的生命周期+20秒，并且随着灼热的运行的时间越久，每次工作造成的伤害也越大。这里不仅要改写model的tickTime，还要连OnTick函数都改写，依赖的参数就是这个timeElapsed（越久伤害越高）。
+- **caster**和**carrier**：是buff的释放者和携带者两个GameObject，释放者可能是null的.
+- **stack**：当前层数，也是因为游戏设计需要才存在的，如果都是1层，就不需要了。
+- **param**：一些动态的参数，比如《魔兽世界》中牧师的盾，还能吸收多少伤害的具体数值，就记录在这里，每次受到攻击都会减少多少。原本最早版本的buff机制中，这个盾的效果被记录在stack里，但这样显然是不对的——stack的意义不是这个，如果强行这么用就有了二义性，盾吸收值也许是一个Int128甚至Int256，而stack通常只需要Byte就够了。
+### AddBuffInfo
+
+这是创建BuffObj的中间件，确切地说，我们每次要给角色的Buff做增删改查，都应该创建一条AddBuffInfo，而非直接修改ChaState中的buff。因为我们可能有些技能的效果会导致角色的添加buff，比如说有一个buff的效果是“受到伤害的时候获得厚皮（另一个buff）”，“厚皮”的效果是受到伤害时降低50%，并且下一次伤害免疫（又是一个新的buff），这时候我们如果同一轮里面执行就会执行到后面2个新增加的buff效果，但实际上这是不应该发生的，只是恰好C#的list管理方式碰巧有这个效果在那里，但这非常的不安全。所以我们正确的做法，就是当要给角色添加buff的时候，一定是产生一个AddBuffInfo，由BuffManager来管理buff的添加。AddBuffInfo这个“中间件”的属性有：
+
+- **model**：也就是要创建的BuffObj的model，这里也用model而不是一个id然后去buffModel表里查找，是因为model是可以通过脚本代码动态生成的，他也是个数据，所以他的源不应该是唯一的（仅仅来自于策划填表，确切地说，所有的Model数据都不应该只能是读表读来的）。
+- **caster**和**carrier**：谁给谁添加。
+- **time**：要添加的时间，如果是永久的，那么duration就不在重要了，否则就是根据**durationSetTo**来确定是给buff添加一个时间还是设置为这个时间。因为这很可能是在改动一个已经存在的BuffObj，而并不一定总是新增一个BuffObj。
+- **addStack**：要添加的层数，如果是负数就是要减少的层数，0则表示层数不变，尽管如此，添加了之后只要BuffObj不符合被删除的标准，就还是会导致BuffOnTick被执行。
+- **param**：要设定给BuffObj.param的值，这个设定规则可以由策划定，当然对于程序来说最好的就是新的覆盖老的，但通常来说，这样做是无法满足需求的。
+
+### Buff的“回调点”  
+
+Buff的“回调点”的本质，就是在一些固定的逻辑代码中安插脚本片段，来改变逻辑执行所依赖的数据，从而使得整个流程走完会得到“不同寻常的效果”。Buff回调点是整个游戏流程设计的灵魂，因为Buff的回调点有哪些，是完全取决于游戏需要的，我们可以把游戏的任何一段代码里都安插上，但越多的回调点会导致游戏运行效率越低，所以归纳好回调点是非常重要的事情，而归纳回调点的核心思路是——在设计一个玩法的同时，也去设计一些数据，来试着填充玩法，而不是凭空去想一个“创意”，比如我们要设计一个卡牌游戏，规则设计完了之后，我们应该马上设计一些具体的卡牌，然后看看这些卡牌需要哪些回调点来支持逻辑。通常来说，一个ARPG（当然也包含了顶视角射击游戏），他所需要埋设buff回调点的流程，不外乎就是伤害流程和角色相关的一些流程（比如buff的增删改和释放技能的时候）。
+
+相对于对attacker身上的某些标记进行各种不同的if else 代码.我们通过对角色挂载buff标记,反过来让角色的标记在流程里告诉我么该做什么!!!(在伤害流程中个点循环所有buff中相同的回调事件去触发)
+```cs
+/// <summary>
+
+/// 在BuffObj被创建、或者已经存在的BuffObj层数发生变化
+
+/// </summary>
+
+public delegate void BuffOnOccur(BuffObj buff, int modifyStack);
+
+/// <summary>
+
+/// 在一个buff因为生命周期结束，或者层数<=0的时候，他要被移除掉之前，
+
+/// </summary>
+
+public delegate void BuffOnRemoved(BuffObj buff);
+
+/// <summary>
+
+/// 这是最常见的buff效果“每一跳”的回调点，我们通常所说的“间歇性效果”
+
+/// </summary>
+
+public delegate void BuffOnTick(BuffObj buff);
+
+/// <summary>
+
+/// 这是技能在“命中”时候执行的一个回调点
+
+/// </summary>
+
+public delegate void BuffOnHit(BuffObj buff, ref DamageInfo damageInfo, GameObject target);
+
+/// <summary>
+
+/// 与OnHit相呼应的是，这是受到攻击时候触发的逻辑
+
+/// </summary>
+
+public delegate void BuffOnBeHurt(BuffObj buff, ref DamageInfo damageInfo, GameObject attacker);
+
+/// <summary>
+
+/// 在确定会击败对手的时候执行的回调
+
+/// </summary>
+
+public delegate void BuffOnKill(BuffObj buff, DamageInfo damageInfo, GameObject target);
+
+/// <summary>
+
+/// 在确定会被击败之后执行的回调
+
+/// </summary>
+
+public delegate void BuffOnBeKilled(BuffObj buff, DamageInfo damageInfo, GameObject attacker);
+
+/// <summary>
+
+/// 这是在角色释放技能的时候发生的回调
+
+/// </summary>
+
+public delegate TimelineObj BuffOnCast(BuffObj buff, SkillObj skill, TimelineObj timeline);
+```
+## 子弹（Bullet）
+
+![[Pasted image 20250216164745.png]]
+子弹下面一样有一个ViewContainer，作为装特效、或者说子弹外观的一个容器，当有必要改变子弹的外观大小等的时候，应该改变的是ViewContainer的大小，而非整个BulletObj。
+![[Pasted image 20250216164833.png]]
+### UnitMove和UnitRotate
+
+UnitMove和UnitRotate，就是CharacterObj下也会用到的2个控件，他们在这里的作用是控制子弹的移动和旋转。
+
+ ### BulletState
+
+BulletState对于BulletObj，就如ChaState对于CharacterObj，是一个核心的存在——有了BulletState的GameObject才是真正的BulletObj。
+
+## Area of Effect（AoE）
+
+和CharacterObj、BulletObj一样，AoeObj也是一个“空”的GameObject下放了一个“空”的ViewContainer：
+![[Pasted image 20250216172815.png]]
+使用方式与子弹相似
+### AoE与子弹为何不可互相取代？
+
+- 当我们设计子弹的时候，出发点是角色发射出这么一系列子弹，如果碰到了什么应该有什么效果。
+- 当我们设计AoE的时候，出发点是捕捉到了一个范围内的角色或者子弹，对他们干点什么；然后就是如果有角色或者子弹进来、离开或者呆在里面，该对他们干点什么。
+
