@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
+                "file": "MemoryStack/Unity/API/Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇)"
+              "title": "Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
+                "file": "MemoryStack/Unity/API/Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇) 的大纲"
+              "title": "Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容 的大纲"
             }
           }
         ],
@@ -183,21 +183,26 @@
   },
   "active": "474272f20fe9d411",
   "lastOpenFiles": [
+    "MemoryStack/Unity/API/TrailRenderer  拖尾组件.md",
+    "MemoryStack/Unity/API/Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容.md",
+    "MemoryStack/Unity/UGUI/解决代码修改inputField.contentType不更新问题.md",
+    "MemoryStack/Unity/UGUI/Image/Pasted image 20241211191128.png",
+    "MemoryStack/Unity/UGUI/Unity  可滑动关卡.md",
+    "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
+    "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250217173415.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250217173047.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250217172916.png",
+    "MemoryStack/Unity/系统设计/游戏角色属性数值非线性转换设计.md",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250216172815.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216164833.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216164745.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250217170057.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250217171734.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250217172338.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250217172542.png",
+    "MemoryStack/Unity/系统设计/Image/Pasted image 20250217172545.png",
     "MemoryStack/Resource/Unity素材/Untiy 2D素材.md",
     "MemoryStack/Code/Event/事件管理器.md",
     "MemoryStack/Code/Event/委托 delegate.md",
-    "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216150139.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216150114.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216140523.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216145959.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216150042.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216150051.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216140358.png",
-    "MemoryStack/Unity/系统设计/Image/Pasted image 20250216133317.png",
     "MemoryStack/Unity/优化/Image",
     "MemoryStack/Unity/打包/打包并发布微信小游戏.md",
     "MemoryStack/Unity/优化/WebGL包体大小优化.md",
@@ -206,7 +211,6 @@
     "MemoryStack/Unity/打包/Unity   mac  打包 android apk 报错合集.md",
     "MemoryStack/Unity/打包/Image",
     "MemoryStack/Unity/系统设计/Image",
-    "MemoryStack/Unity/系统设计/游戏角色属性数值非线性转换设计.md",
     "MemoryStack/Unity/系统设计",
     "MemoryStack/Code/算法/A*寻路算法.md",
     "MemoryStack/Code/算法/Image",
@@ -222,12 +226,8 @@
     "MemoryStack/Unity/杂项/Untiy引用旧项目加入到新的项目中.md",
     "MemoryStack/Unity/Editor/垃圾代码生成器.md",
     "MemoryStack/Unity/2D/制作无限滑动的视差背景.md",
-    "MemoryStack/Tool/Git.md",
-    "MemoryStack/Tool/VPN.md",
     "MemoryStack/Unity/Editor/Image",
-    "MemoryStack/Unity/杂项/复刻旋转三角板.md",
     "MemoryStack/Unity/Editor",
-    "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
     "MemoryStack/Unity/动画"
   ]
 }

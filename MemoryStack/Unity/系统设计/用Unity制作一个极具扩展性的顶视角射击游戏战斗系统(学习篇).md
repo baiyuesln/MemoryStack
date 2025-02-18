@@ -397,3 +397,13 @@ BulletState对于BulletObj，就如ChaState对于CharacterObj，是一个核心�
 - 当我们设计子弹的时候，出发点是角色发射出这么一系列子弹，如果碰到了什么应该有什么效果。
 - 当我们设计AoE的时候，出发点是捕捉到了一个范围内的角色或者子弹，对他们干点什么；然后就是如果有角色或者子弹进来、离开或者呆在里面，该对他们干点什么。
 
+## AoE技能添加流程
+
+1. 创建动画预制体![[Pasted image 20250217170057.png]]
+2. 在技能设计表中设计技能资源消耗![[Pasted image 20250217171734.png]]
+3. 在时间轴设计表中设计时间轴具体实现事件![[Pasted image 20250217172338.png]]
+4. 在AoE设计表中设计AoeModel,包含步骤1的预制体和需要的回调函数![[Pasted image 20250217172545.png]]
+5. 在战斗开始GameManager学习技能![[Pasted image 20250217172916.png]]
+6. 在PlayerController中使用技能![[Pasted image 20250217173415.png]]
+
+ 

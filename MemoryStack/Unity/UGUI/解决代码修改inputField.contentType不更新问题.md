@@ -1,4 +1,4 @@
-#inputField
+#inputField #ugui 
 
 **解决代码修改inputField.contentType不更新问题，需要的点击下输入框才可以显示**
 
