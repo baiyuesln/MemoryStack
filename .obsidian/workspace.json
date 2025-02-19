@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MemoryStack/Unity/API/Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容.md",
+                "file": "MemoryStack/Tool/文本转音频(请求硅基流动语言模型api).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容"
+              "title": "文本转音频(请求硅基流动语言模型api)"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MemoryStack/Unity/API/Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容.md",
+                "file": "MemoryStack/Tool/文本转音频(请求硅基流动语言模型api).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容 的大纲"
+              "title": "文本转音频(请求硅基流动语言模型api) 的大纲"
             }
           }
         ],
@@ -183,8 +183,12 @@
   },
   "active": "474272f20fe9d411",
   "lastOpenFiles": [
-    "MemoryStack/Unity/API/TrailRenderer  拖尾组件.md",
+    "MemoryStack/Code/协程/注意事项.md",
+    "MemoryStack/Resource/Unity素材/Untiy 2D素材.md",
+    "MemoryStack/Tool/VPN.md",
+    "MemoryStack/Tool/文本转音频(请求硅基流动语言模型api).md",
     "MemoryStack/Unity/API/Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容.md",
+    "MemoryStack/Unity/API/TrailRenderer  拖尾组件.md",
     "MemoryStack/Unity/UGUI/解决代码修改inputField.contentType不更新问题.md",
     "MemoryStack/Unity/UGUI/Image/Pasted image 20241211191128.png",
     "MemoryStack/Unity/UGUI/Unity  可滑动关卡.md",
@@ -200,7 +204,6 @@
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250217172338.png",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250217172542.png",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250217172545.png",
-    "MemoryStack/Resource/Unity素材/Untiy 2D素材.md",
     "MemoryStack/Code/Event/事件管理器.md",
     "MemoryStack/Code/Event/委托 delegate.md",
     "MemoryStack/Unity/优化/Image",
@@ -223,9 +226,6 @@
     "MemoryStack/Unity/杂项/Unity 集成 友盟  (ios).md",
     "MemoryStack/Unity/杂项/Unity 调用IOS的StoreKit实现在游戏内部的对游戏进行星级评价和评论.md",
     "MemoryStack/Unity/杂项/Unity 调用IOS ATT授权弹窗（AppTrackingTransparency）.md",
-    "MemoryStack/Unity/杂项/Untiy引用旧项目加入到新的项目中.md",
-    "MemoryStack/Unity/Editor/垃圾代码生成器.md",
-    "MemoryStack/Unity/2D/制作无限滑动的视差背景.md",
     "MemoryStack/Unity/Editor/Image",
     "MemoryStack/Unity/Editor",
     "MemoryStack/Unity/动画"
