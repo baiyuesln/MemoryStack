@@ -1,4 +1,4 @@
-#webgl 
+#webgl  #优化
 
 使用微信小游戏转换工具转换成功后,打开Editor Log
 
