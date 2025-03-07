@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MemoryStack/Unity/UGUI/使用CanvasGroup组件控制UI元素的显隐以代替SetActive.md",
+                "file": "MemoryStack/Code/Lua/基础语法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "使用CanvasGroup组件控制UI元素的显隐以代替SetActive"
+              "title": "基础语法"
+            }
+          },
+          {
+            "id": "5c920b5c3ea1adec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MemoryStack/Unity/动画/使用DoTween实现倒计时动画时的取消问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "使用DoTween实现倒计时动画时的取消问题"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -155,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MemoryStack/Unity/UGUI/使用CanvasGroup组件控制UI元素的显隐以代替SetActive.md",
+                "file": "MemoryStack/Unity/动画/使用DoTween实现倒计时动画时的取消问题.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "使用CanvasGroup组件控制UI元素的显隐以代替SetActive 的大纲"
+              "title": "使用DoTween实现倒计时动画时的取消问题 的大纲"
             }
           }
         ],
@@ -169,7 +183,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 294.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,11 +195,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cd1e75d33bddbca3",
+  "active": "5c920b5c3ea1adec",
   "lastOpenFiles": [
+    "MemoryStack/Tool/VPN.md",
+    "MemoryStack/Unity/动画/使用DoTween实现倒计时动画时的取消问题.md",
+    "MemoryStack/Code/Lua/基础语法.md",
+    "MemoryStack/游戏设计.md",
+    "MemoryStack/Code/C Sharp/协程/注意事项.md",
+    "MemoryStack/Code/Lua",
+    "MemoryStack/Code/C Sharp",
+    "MemoryStack/Code/算法/A*寻路算法.md",
+    "MemoryStack/Unity/UGUI/UGUI性能优化.md",
+    "MemoryStack/Unity/UGUI/Unity  可滑动关卡.md",
+    "MemoryStack/Unity/Editor/编辑器模式下对Text的一键修正.md",
+    "MemoryStack/Code/C Sharp/Event/事件管理器.md",
+    "MemoryStack/Code/C Sharp/对象池/简单对象池.md",
+    "MemoryStack/Unity/UGUI/使用CanvasGroup组件控制UI元素的显隐以代替SetActive.md",
     "MemoryStack/Unity/UGUI/Image/Pasted image 20250305164122.png",
     "MemoryStack/Resource/面试题/C Sharp类.md",
-    "MemoryStack/Unity/UGUI/使用CanvasGroup组件控制UI元素的显隐以代替SetActive.md",
     "MemoryStack/Unity/UGUI/UGUI通用框架.md",
     "MemoryStack/Resource/面试题",
     "MemoryStack/Unity/动画/使用有限状态机(FSM)实现animator动画控制.md",
@@ -194,7 +221,6 @@
     "MemoryStack/Unity/Bug/Image",
     "MemoryStack/Unity/Bug/渲染类/内置管线转URP后场景花屏bug.md",
     "MemoryStack/Unity/打包/Unity   mac  打包 android apk 报错合集.md",
-    "MemoryStack/Unity/UGUI/UGUI性能优化.md",
     "MemoryStack/Unity/优化/WebGL包体大小优化.md",
     "MemoryStack/Unity/系统设计/游戏角色属性数值非线性转换设计.md",
     "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
@@ -208,26 +234,14 @@
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250224171332.png",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250224171107.png",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250224171056.png",
-    "MemoryStack/Code/Event/委托 delegate.md",
-    "MemoryStack/Code/协程/注意事项.md",
+    "MemoryStack/Code/C Sharp/Event/委托 delegate.md",
     "MemoryStack/Resource/Unity素材/Untiy 2D素材.md",
-    "MemoryStack/Tool/VPN.md",
     "MemoryStack/Tool/文本转音频(请求硅基流动语言模型api).md",
-    "MemoryStack/Unity/API/Unity使用Render Texture在UI界面RawImage上投影其他相机拍摄的内容.md",
-    "MemoryStack/Unity/API/TrailRenderer  拖尾组件.md",
-    "MemoryStack/Unity/UGUI/解决代码修改inputField.contentType不更新问题.md",
-    "MemoryStack/Unity/UGUI/Image/Pasted image 20241211191128.png",
-    "MemoryStack/Unity/UGUI/Unity  可滑动关卡.md",
-    "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
-    "MemoryStack/Code/Event/事件管理器.md",
     "MemoryStack/Unity/优化/Image",
-    "MemoryStack/Unity/打包/打包并发布微信小游戏.md",
     "MemoryStack/Unity/优化",
     "MemoryStack/Unity/打包/Image",
     "MemoryStack/Unity/系统设计/Image",
     "MemoryStack/Unity/系统设计",
-    "MemoryStack/Code/算法/Image",
-    "MemoryStack/Code/算法",
-    "MemoryStack/Unity/Editor/Image"
+    "MemoryStack/Code/算法/Image"
   ]
 }
