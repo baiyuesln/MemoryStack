@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MemoryStack/Unity/动画/使用DoTween实现倒计时动画时的取消问题.md",
+                "file": "MemoryStack/Code/C Sharp/Event/事件管理器.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "使用DoTween实现倒计时动画时的取消问题"
+              "title": "事件管理器"
             }
           }
         ],
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#游戏设计",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MemoryStack/Unity/动画/使用DoTween实现倒计时动画时的取消问题.md",
+                "file": "MemoryStack/Code/C Sharp/Event/事件管理器.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "使用DoTween实现倒计时动画时的取消问题 的大纲"
+              "title": "事件管理器 的大纲"
             }
           }
         ],
@@ -197,11 +197,17 @@
   },
   "active": "5c920b5c3ea1adec",
   "lastOpenFiles": [
-    "MemoryStack/Tool/VPN.md",
+    "MemoryStack/Code/C Sharp/Event/委托 delegate.md",
+    "MemoryStack/Code/C Sharp/协程/注意事项.md",
+    "MemoryStack/Code/C Sharp/对象池/简单对象池.md",
+    "MemoryStack/Unity/2D/2D阴影.md",
+    "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
+    "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
+    "MemoryStack/Unity/UGUI/解决代码修改inputField.contentType不更新问题.md",
     "MemoryStack/Unity/动画/使用DoTween实现倒计时动画时的取消问题.md",
+    "MemoryStack/Tool/VPN.md",
     "MemoryStack/Code/Lua/基础语法.md",
     "MemoryStack/游戏设计.md",
-    "MemoryStack/Code/C Sharp/协程/注意事项.md",
     "MemoryStack/Code/Lua",
     "MemoryStack/Code/C Sharp",
     "MemoryStack/Code/算法/A*寻路算法.md",
@@ -209,7 +215,6 @@
     "MemoryStack/Unity/UGUI/Unity  可滑动关卡.md",
     "MemoryStack/Unity/Editor/编辑器模式下对Text的一键修正.md",
     "MemoryStack/Code/C Sharp/Event/事件管理器.md",
-    "MemoryStack/Code/C Sharp/对象池/简单对象池.md",
     "MemoryStack/Unity/UGUI/使用CanvasGroup组件控制UI元素的显隐以代替SetActive.md",
     "MemoryStack/Unity/UGUI/Image/Pasted image 20250305164122.png",
     "MemoryStack/Resource/面试题/C Sharp类.md",
@@ -223,20 +228,15 @@
     "MemoryStack/Unity/打包/Unity   mac  打包 android apk 报错合集.md",
     "MemoryStack/Unity/优化/WebGL包体大小优化.md",
     "MemoryStack/Unity/系统设计/游戏角色属性数值非线性转换设计.md",
-    "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
     "MemoryStack/Unity/UGUI/Image/Pasted image 20250226204151.png",
     "MemoryStack/Unity/UGUI/Image/Pasted image 20250226204244.png",
     "MemoryStack/Unity/3D/物体移动碰撞穿模问题.md",
-    "MemoryStack/Unity/Editor/对项目进行全面的混淆以通过ios审核和防止逆向.md",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250224172015.png",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250224171909.png",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250224171501.png",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250224171332.png",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250224171107.png",
     "MemoryStack/Unity/系统设计/Image/Pasted image 20250224171056.png",
-    "MemoryStack/Code/C Sharp/Event/委托 delegate.md",
-    "MemoryStack/Resource/Unity素材/Untiy 2D素材.md",
-    "MemoryStack/Tool/文本转音频(请求硅基流动语言模型api).md",
     "MemoryStack/Unity/优化/Image",
     "MemoryStack/Unity/优化",
     "MemoryStack/Unity/打包/Image",
