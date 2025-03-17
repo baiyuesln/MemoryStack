@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MemoryStack/Resource/面经.md",
+                "file": "MemoryStack/Unity/优化/使用图集atlas优化batch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "面经"
+              "title": "使用图集atlas优化batch"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MemoryStack/Resource/面经.md",
+                "file": "MemoryStack/Unity/优化/使用图集atlas优化batch.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "面经 的大纲"
+              "title": "使用图集atlas优化batch 的大纲"
             }
           }
         ],
@@ -183,7 +183,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 294.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,18 +198,24 @@
   },
   "active": "5c920b5c3ea1adec",
   "lastOpenFiles": [
+    "MemoryStack/Unity/优化/GC(垃圾回收).md",
+    "MemoryStack/Unity/优化/使用图集atlas优化batch.md",
+    "MemoryStack/Unity/优化/WebGL包体大小优化.md",
+    "MemoryStack/Unity/UGUI/使用CanvasGroup组件控制UI元素的显隐以代替SetActive.md",
+    "MemoryStack/Unity/UGUI/通过Scroll Rect制作战斗信息滚动条.md",
+    "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
+    "MemoryStack/Unity/UGUI/Scroll Rect 优化 实现循环复用列表.md",
+    "MemoryStack/Unity/UGUI/UGUI通用框架.md",
+    "MemoryStack/Unity/UGUI/UGUI性能优化.md",
+    "MemoryStack/Resource/面经.md",
     "MemoryStack/Unity/系统设计/用Unity制作一个极具扩展性的顶视角射击游戏战斗系统(学习篇).md",
     "MemoryStack/Unity/Editor/编辑器模式下对Text的一键修正.md",
     "MemoryStack/Unity/Editor/对项目进行全面的混淆以通过ios审核和防止逆向.md",
     "MemoryStack/Unity/Editor/对项目中未引用的资源进行一键删除.md",
     "MemoryStack/Unity/Editor/垃圾代码生成器.md",
     "MemoryStack/游戏设计.md",
-    "MemoryStack/Resource/面经.md",
     "MemoryStack/Code/算法/A*寻路算法.md",
-    "MemoryStack/Unity/UGUI/Scroll Rect 优化 实现循环复用列表.md",
-    "MemoryStack/Unity/UGUI/通过Scroll Rect制作战斗信息滚动条.md",
     "MemoryStack/Unity/UGUI/Image/Pasted image 20250313110507.png",
-    "MemoryStack/Unity/UGUI/使用CanvasGroup组件控制UI元素的显隐以代替SetActive.md",
     "MemoryStack/Unity/UGUI/战斗消息面板实现 (Scroll View).md",
     "MemoryStack/Code/C Sharp/Event/事件管理器.md",
     "MemoryStack/Unity/Bug/代码类/UniTask 在协程中使用(不改变原逻辑).md",
@@ -220,12 +227,6 @@
     "MemoryStack/Unity/杂项/复刻旋转三角板.md",
     "MemoryStack/Unity/2D/2D阴影.md",
     "MemoryStack/Code/C Sharp/Event/委托 delegate.md",
-    "MemoryStack/Code/C Sharp/协程/注意事项.md",
-    "MemoryStack/Code/C Sharp/对象池/简单对象池.md",
-    "MemoryStack/Unity/UGUI/DoTween 常用代码.md",
-    "MemoryStack/Unity/动画/使用DoTween实现倒计时动画时的取消问题.md",
-    "MemoryStack/Tool/VPN.md",
-    "MemoryStack/Code/Lua/基础语法.md",
     "MemoryStack/Code/Lua",
     "MemoryStack/Code/C Sharp",
     "MemoryStack/Unity/UGUI/Image/Pasted image 20250305164122.png",
