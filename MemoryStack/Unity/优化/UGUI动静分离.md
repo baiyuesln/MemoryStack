@@ -141,6 +141,12 @@ Graphic Raycaster 是图形射线检测组件，用于检测投向Canvas的射�
 
 ### Unity  Profiler ui分析
 
+动静分离前:
+
+![[Pasted image 20250320135659.png]]
+
+动静分离后:
+
 ![[Pasted image 20250320114333.png]]
 ##### **1. Self Batch Count**
 
